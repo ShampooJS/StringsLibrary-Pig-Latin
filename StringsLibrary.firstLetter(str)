@@ -1,0 +1,6 @@
+// Returns the first letter of a string
+// str {string} - a string of characters
+// return {string} - the first character of the string
+function firstLetter(str){
+  return str.substring(0,1);
+}
