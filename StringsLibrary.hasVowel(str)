@@ -1,0 +1,12 @@
+// Looks for a vowel in a string
+// str {string} - a string of characters
+// return {boolean} - returns true if a vowel is found, otherwise returns false
+function hasVowel(str){
+  var lower = str.toLowerCase();
+  for(var i=0; i<lower.length; i++){
+    if(lower[i] == "a" || lower[i] == "e" || lower[i] == "i" || lower[i] == "o" || lower[i] == "u"){
+      return true;
+    }
+  }
+  return false;
+}
