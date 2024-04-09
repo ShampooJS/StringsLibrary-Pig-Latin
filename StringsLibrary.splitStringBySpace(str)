@@ -1,0 +1,17 @@
+// Splits a string into a list of words
+// str {str} - a string of characters
+// return {list} - a list with each element containing one word
+function splitStringBySpace(str){
+  var tempList = [];
+  var tempWord = "";
+  for(var i=0; i<str.length; i++){
+    if(str[i]== " "){
+      appendItem(tempList, tempWord);
+      tempWord = "";
+    } else {
+      tempWord = tempWord + str[i];
+    }
+  }
+  appendItem(tempList, tempWord);
+  return tempList;
+}
