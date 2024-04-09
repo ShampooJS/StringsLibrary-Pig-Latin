@@ -1,0 +1,6 @@
+// Returns a string with the first character removed
+// str {string} - a string of characters
+// return {string} - every character except the first
+function allButFirst(str){
+  return str.substring(1,str.length);
+}
